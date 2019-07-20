@@ -1,7 +1,7 @@
 {
   "name": "puppet-strings-carlo",
   "version": "0.0.0",
-  "description": "An awesome package",
+  "description": "Automate Carlo apps with puppet-strings",
   "keywords": [],
   "homepage": "https://github.com/vinsonchuong/puppet-strings-carlo",
   "bugs": "https://github.com/vinsonchuong/puppet-strings-carlo/issues",
@@ -14,7 +14,10 @@
     "release": "semantic-release",
     "prepack": "build-esm"
   },
-  "dependencies": {},
+  "dependencies": {
+    "carlo": ">=0.9.46",
+    "puppet-strings": ">=3.1.2"
+  },
   "devDependencies": {
     "ava": "^2.2.0",
     "build-esm": "^4.2.1",

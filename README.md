@@ -4,9 +4,21 @@
 [![dependencies Status](https://david-dm.org/vinsonchuong/puppet-strings-carlo/status.svg)](https://david-dm.org/vinsonchuong/puppet-strings-carlo)
 [![devDependencies Status](https://david-dm.org/vinsonchuong/puppet-strings-carlo/dev-status.svg)](https://david-dm.org/vinsonchuong/puppet-strings-carlo?type=dev)
 
-An awesome package
+Automate Carlo apps with
+[puppet-strings](https://github.com/vinsonchuong/puppet-strings)
 
-## Usage
+## Example
+```js
+const app = await carlo.launch(})
+app.serveOrigin('http://example.com')
+app.load('http://example.com')
+
+const tab = await openCarlo(app)
+const body = await findElement(tab, 'body')
+t.true(body.innerText.includes('Example Domain'))
+```
+
+## Installation
 Install [puppet-strings-carlo](https://yarnpkg.com/en/package/puppet-strings-carlo)
 by running:
 
