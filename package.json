@@ -1,0 +1,35 @@
+{
+  "name": "puppet-strings-carlo",
+  "version": "0.0.0",
+  "description": "An awesome package",
+  "keywords": [],
+  "homepage": "https://github.com/vinsonchuong/puppet-strings-carlo",
+  "bugs": "https://github.com/vinsonchuong/puppet-strings-carlo/issues",
+  "license": "MIT",
+  "author": "Vinson Chuong <vinsonchuong@gmail.com>",
+  "repository": "vinsonchuong/puppet-strings-carlo",
+  "scripts": {
+    "prepare": "flow-typed update --skip",
+    "test": "if [ -n \"$CI\" ]; then standard -v && flow check && ava -v; else standard -v --fix && flow && ava -v; fi",
+    "release": "semantic-release",
+    "prepack": "build-esm"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^2.2.0",
+    "build-esm": "^4.2.1",
+    "flow-bin": "^0.103.0",
+    "flow-typed": "^2.6.0",
+    "overdub": "^2.3.2",
+    "semantic-release": "^15.13.18",
+    "standard-esnext": "^5.3.1"
+  },
+  "ava": {
+    "require": "overdub/register",
+    "babel": {
+      "testOptions": {
+        "extends": "overdub/babel"
+      }
+    }
+  }
+}
