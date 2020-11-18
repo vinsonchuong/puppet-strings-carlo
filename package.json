@@ -24,7 +24,7 @@
     "flow-bin": "^0.103.0",
     "flow-typed": "^2.6.0",
     "overdub": "^2.3.2",
-    "semantic-release": "^15.13.18",
+    "semantic-release": "^17.2.3",
     "standard-esnext": "^5.3.1"
   },
   "ava": {
